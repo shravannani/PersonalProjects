@@ -1,0 +1,30 @@
+.nav-bg-color{
+    background: linear-gradient(90deg, rgb(55, 49, 112) 0%, rgb(7, 106, 235)100%);
+}
+
+.custom-margin-bottom{
+    margin-bottom: 100px;
+    border-bottom: 100px;
+}
+
+li a{
+    color:white !important
+}
+
+.navbar-nav > li {
+    float: left;
+    position: relative;
+}
+
+.navbar-nav > li{
+    margin-left:10px;
+    margin-right:10px;
+}
+.navbar-light .navbar-nav .active a::after {
+    border-bottom: 2px solid #4ae21c;
+    bottom: 7px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+}

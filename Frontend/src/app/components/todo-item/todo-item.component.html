@@ -1,0 +1,26 @@
+<div>
+    <div class="row row-decor text-lg-center">
+        <div class="col-lg-1 col-md-1 col-sm-1 align-self-center bg-primary cell-decor rounded">
+            {{ todo.id }}
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 align-self-center bg-primary cell-decor rounded">
+            {{ todo.name }}
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 align-self-center bg-primary cell-decor rounded">
+            {{ todo.description }}
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 bg-primary cell-decor rounded">
+            <div class="row" *ngFor="let t of todo.task">
+                <div class="col-lg-3 col-md-3 col-sm-3 align-self-center">
+                    {{ t.id }}
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 align-self-center">
+                    {{ t.name }}
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 align-self-center">
+                    {{ t.description }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

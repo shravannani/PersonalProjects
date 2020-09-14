@@ -1,0 +1,37 @@
+<div class="container top-margin">
+    <div class="jumbotron text-lg-center">
+        <h3>Display all available todos</h3>
+        <button (click)="toggleFlag()" class="btn btn-primary" role="button">Get</button>
+    </div>
+
+    <div *ngIf="flag" class="left-margin">
+        <div class="row row-decor text-lg-center">
+            <div class="col-lg-1 col-md-1 col-sm-1 bg-success cell-decor rounded">
+                <h4>Id</h4>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 bg-success cell-decor rounded">
+                <h4>Name</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 bg-success cell-decor rounded">
+                <h4>Description</h4>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 bg-success cell-decor rounded">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <h4>Sub task Id</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h4>Sub task Name</h4>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <h4>Sub task description</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <app-todo-item *ngFor="let todo of todos" [todo]="todo">
+        </app-todo-item>
+    </div>
+
+</div>

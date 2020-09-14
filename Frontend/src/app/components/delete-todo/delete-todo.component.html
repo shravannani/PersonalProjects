@@ -1,0 +1,13 @@
+<div class="container top-margin">
+    <div class="jumbotron text-lg-center">
+        <h3>Delete a todo based on Id</h3>
+
+        <input type="text" [(ngModel)]="id" placeholder="Enter an Id">
+        <button (click)="deleteById()" class="btn btn-primary left-margin" role="button">Delete by Id</button>
+    </div>
+
+    <div *ngIf="flag" class="left-margin">
+        Deleted Successfully
+    </div>
+
+</div>

@@ -1,0 +1,49 @@
+<div class="container top-margin">
+    <div class="jumbotron text-lg-center">
+        <h3>Add a Todo</h3>
+        <button (click)="toggleFlag()" class="btn btn-primary" role="button">Add</button>
+    </div>
+
+    <div class="left-margin">
+        <div class="row row-decor text-lg-center">
+            <div class="col-lg-3 col-md-3 col-sm-3 bg-success cell-decor rounded">
+                <h4>Name</h4>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 bg-success cell-decor rounded">
+                <h4>Description</h4>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 bg-success cell-decor rounded">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <h4>Sub task Name</h4>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <h4>Sub task description</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row row-decor text-lg-center">
+                <div class="col-lg-3 col-md-3 col-sm-3 align-self-center bg-primary cell-decor rounded">
+                    <input type="text" [(ngModel)]="name" placeholder="Enter Name">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 align-self-center bg-primary cell-decor rounded">
+                    <input type="text" [(ngModel)]="description" placeholder="Enter Description">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 bg-primary cell-decor rounded">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 align-self-center">
+                            <input type="text" [(ngModel)]="taskName" placeholder="Enter Sub task Name">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7 align-self-center">
+                            <input type="text" [(ngModel)]="taskDescription" placeholder="Enter Sub task Description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

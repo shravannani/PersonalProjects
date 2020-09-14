@@ -1,0 +1,17 @@
+.row-decor{
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+.cell-decor{
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.left-margin{
+    margin-left: 5px;
+}
+
+.top-margin{
+    margin-top:50px;
+}
