@@ -87,7 +87,7 @@ public class TodoController {
     @DeleteMapping("/MainTodo/{id}")
     public String delMainTask(@PathVariable Long id) throws Exception{
         todoRepository.deleteById(id);
-        return "successfully deleted";
+        return "success";
     }
 }
 
